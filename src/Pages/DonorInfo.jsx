@@ -11,6 +11,7 @@ function DonorInfo() {
   //   setdData(donorData)
   // },[])
 
+  const DOB = donorData.DateOfBirth.includes("T")?donorData.DateOfBirth.slice(0,donorData.DateOfBirth.indexOf("T")):donorData.DateOfBirth
   return (
     <>
       {!editModel ?
@@ -33,7 +34,7 @@ function DonorInfo() {
               <strong>Blood Group:</strong> <i>{donorData.BloodGroup}</i>
             </li>
             <li className="py-2">
-              <strong>Date of Birth:</strong> <i>{donorData.DateOfBirth}</i>
+              <strong>Date of Birth:</strong> <i>{DOB}</i>
             </li>
             <li className="py-2">
               <strong>Mobile Number:</strong> <i>{donorData.MobNo}</i>
@@ -44,7 +45,10 @@ function DonorInfo() {
             </li>
             <li className="py-2">
               <strong>Added By:</strong> <i>{donorData.AddedBy
-
+              }</i>
+            </li>
+            <li className="py-2">
+              <strong>Last Updated By:</strong> <i>{donorData.UpdatedBy
               }</i>
             </li>
           </ul>

@@ -52,7 +52,7 @@ function ResetPassword() {
     <div className="max-w-md mx-auto p-6 bg-white border border-black rounded-md shadow-md m-20">
     <h2 className="text-2xl font-semibold mb-4">Reset Password</h2>
 <form className="max-w-sm mx-auto" onSubmit={ResetPassHandler}>
-  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Token</label>
+  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-dark">Token</label>
   <div className="relative">
     <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
     <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -69,7 +69,7 @@ function ResetPassword() {
     </span>
   </button>
 </div>
-  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-5">Password</label>
+  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-dark mt-5">Password</label>
   <div className="relative">
   <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
       <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
@@ -78,7 +78,7 @@ function ResetPassword() {
     </div>
     <input required type="password" id="email-address-icon" value={ResetPassData.password} onChange={e=>setResetPassData({...ResetPassData,password:e.target.value})} className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="*******"/>
   </div>
-  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white mt-5">Confirm Password</label>
+  <label htmlFor="email-address-icon" className="block mb-2 text-sm font-medium text-gray-900 dark:text-dark mt-5">Confirm Password</label>
   <div className="relative mb-5">
   <div className="absolute inset-y-0 left-0 flex items-center pl-3.5 pointer-events-none">
       <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
